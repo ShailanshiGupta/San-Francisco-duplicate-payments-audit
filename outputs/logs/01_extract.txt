@@ -1,0 +1,110 @@
+======================================================================
+STEP 1: DOWNLOADING FISCAL YEAR 2026
+======================================================================
+Rows on SF's portal: 511,226
+Downloading in 11 pages of up to 50,000 rows
+
+Rows downloaded: 511,226
+Saved: data/raw/sf_vouchers_fy2026.csv
+Saved: data/raw/sf_vouchers_fy2026.parquet
+
+======================================================================
+SUMMARY
+======================================================================
+Total paid:                $16,842,902,152.64
+Unique vendors (by name):  6,521
+Unique vouchers:           496,574
+Unique purchase orders:    113,764
+Unique departments:        57
+
+Payment amount checks:
+- Rows with a negative amount (reversals or credits): 4,230  totaling $-74,085,291.35
+- Rows with a zero amount:                            38,639
+- Rows with a positive amount:                        468,357
+
+How many rows each voucher has (1 = one row per payment):
+- 1 row(s): 486,591 vouchers
+- 2 row(s): 7,516 vouchers
+- 3 row(s): 1,460 vouchers
+- 4 row(s): 516 vouchers
+- 5 row(s): 243 vouchers
+- 6 row(s): 90 vouchers
+- 7 row(s): 63 vouchers
+- 8 row(s): 37 vouchers
+- more than 8 rows: 58 vouchers
+
+Purchase order checks:
+- Missing PO:              0 rows
+- PO made of only zeros:   0 rows
+- 10 most common PO numbers (a placeholder would show up here):
+    Direct Payments: 132,462 rows
+    000101347101: 4,646 rows
+    000099422401: 4,075 rows
+    000097809601: 4,058 rows
+    000094756701: 3,287 rows
+    000101961801: 3,234 rows
+    000101961501: 2,744 rows
+    000094812401: 2,570 rows
+    000094549001: 2,312 rows
+    000097424101: 2,287 rows
+
+Contract checks:
+- Rows with no contract number: 265,721 (52.0%)
+
+data_as_of (possible stand-in for payment date):
+- Earliest: 2025-06-04 07:00:00+00:00
+- Latest:   2026-09-25 07:00:00+00:00
+- Could not read: 0 rows
+- Rows by month:
+    2025-06: 75
+    2025-07: 46,180
+    2025-08: 36,499
+    2025-09: 37,613
+    2025-10: 42,432
+    2025-11: 38,620
+    2025-12: 42,150
+    2026-01: 39,820
+    2026-02: 39,484
+    2026-03: 46,789
+    2026-04: 45,648
+    2026-05: 46,270
+    2026-06: 47,322
+    2026-07: 931
+    2026-08: 757
+    2026-09: 636
+
+Top 10 departments by amount paid:
+- GEN General City - Unallocated: $2,462,164,306.14
+- AIR Airport Commission: $2,115,361,864.81
+- PUC Public Utilities Commsn: $2,114,690,006.49
+- DPH Public Health: $1,880,722,376.91
+- RET Retirement System: $1,487,611,817.27
+- HSS Health Service System: $1,371,361,703.54
+- HSA Human Services Agency: $637,949,046.97
+- MTA Municipal Transprtn Agncy: $622,093,298.19
+- HOM Homelessness Services: $554,816,303.07
+- MYR Mayor: $484,068,513.15
+
+Top 10 purchasing authorities by amount paid:
+- CONSTRUCTION SERVICES: $1,219,881,440.76
+- AIRPORT COMMISSION AUTHORITY - DOCUMENT BID: $1,169,022,942.90
+- Grant Competitive Solicitation: $1,078,615,993.41
+- TERM CONTRACT PROFSERV-BID, ENVIRONMENTAL CONSULTING: $658,244,427.85
+- RELEASE AGAINST A CITY OR DEPARTMENTAL BLANK PURCHASE ORDER: $414,388,420.88
+- Government Entity Agreements: $363,699,958.25
+- Term Contract: $358,164,464.06
+- Core Initiatives Addressing Homelessness,Drug Overdoses & Substance Us...: $342,500,975.40
+- NON-PURCHASING: $301,850,633.87
+- COMPETITIVE SOLICITATION: $280,960,937.45
+
+Top 10 vendors by amount paid:
+- J P MORGAN CHASE BANK NA: $1,966,711,354.09
+- THE BANK OF NEW YORK MELLON TRUST CO NA: $747,335,374.64
+- US BANK NATIONAL ASSOCIATION: $684,330,007.90
+- THE BANK OF NEW YORK MELLON: $661,392,342.67
+- BLUE SHIELD OF CALIF: $628,763,004.51
+- THE DEPOSITORY TRUST COMPANY: $609,271,889.09
+- KAISER FOUNDATION HEALTH PLAN INC: $605,976,050.33
+- Single Payment Payees: $535,130,370.51
+- STATE OF CALIF DEPT OF HEALTH CARE SVCS: $533,604,736.13
+- TURNER CONSTRUCTION CO: $439,603,721.77

@@ -1,0 +1,203 @@
+SETTINGS USED
+- VENDOR_MATCH_THRESHOLD: 90
+- VENDOR_MIN_NAME_LENGTH: 6
+- CROSS_VENDOR_WINDOW_DAYS: 30
+- MIN_AMOUNT: 1000
+
+======================================================================
+5A. VENDOR LIST
+======================================================================
+Vendor names as written:     6,479
+Standardized vendor names:   6,454
+
+======================================================================
+5B. NAME MATCHING
+======================================================================
+Pairs identical after cleanup: 25
+Standardized names compared (at least 6 characters): 6,308
+Similar-name pairs at or above 90: 75
+Similar pairs skipped because the numbers or Roman numerals in the names differ: 46
+
+======================================================================
+5C. VENDOR DUPLICATE CANDIDATES
+======================================================================
+Confidence     pairs     paid to both names combined
+High              25                  $11,623,980.12
+Medium             8                  $29,779,807.05
+Low               67               $1,098,283,885.61
+
+Pairs where the same contract or PO was paid under both names: 2
+
+Top 20 candidates:
+
+#1 [High] Identical after cleanup, similarity 100
+   1: STRYKER SALES CORPORATION  | 654 payments, $4,168,381.98 | depts: DEM, DPH
+   2: Stryker Sales LLC  | 43 payments, $342,122.58 | depts: FIR, DPH, DEM
+
+#2 [High] Identical after cleanup, similarity 100
+   1: FERGUSON ENTERPRISES INC  | 370 payments, $2,077,844.48 | depts: FIR, PUC, MTA, AIR, SHF, DPH, JUV, LIB, PRT
+   2: Ferguson Enterprises LLC  | 3 payments, $1,911.56 | depts: PUC
+
+#3 [High] Identical after cleanup, similarity 100
+   1: GENFARE  | 1 payments, $2,498.27 | depts: MTA
+   2: Genfare LLC  | 11 payments, $1,361,259.33 | depts: MTA
+
+#4 [High] Identical after cleanup, similarity 100
+   1: CITY AUTO SUPPLY  | 583 payments, $180,654.93 | depts: MTA, AIR, FIR, ADM, PUC
+   2: City Auto Supply LLC  | 2,974 payments, $908,530.42 | depts: AIR, ADM, PUC, MTA, FIR
+
+#5 [High] Identical after cleanup, similarity 100
+   1: The Kelsey Civic Center LLC  | 10 payments, $874,192.80 | depts: HSA
+   2: The Kelsey Civic Center LP  | 4 payments, $24,899.12 | depts: HSA
+
+#6 [High] Identical after cleanup, similarity 100
+   1: PACIFIC AUXILIARY FIRE ALARM CO  | 92 payments, $268,435.91 | depts: MTA, DPH, ADM, HOM
+   2: PACIFIC AUXILIARY FIRE ALARM COMPANY  | 35 payments, $69,619.30 | depts: DPH, HOM, REC, ADM
+   shared: 0 contract(s), 2 PO(s)
+
+#7 [High] Identical after cleanup, similarity 100
+   1: GRANICUS INC  | 3 payments, $245,795.76 | depts: POL, TIS
+   2: GRANICUS LLC  | 1 payments, $64,662.64 | depts: ADM
+
+#8 [High] Identical after cleanup, similarity 100
+   1: BORGES & MAHONEY CO.  | 5 payments, $19,517.70 | depts: PUC
+   2: BORGES & MAHONEY INC  | 39 payments, $217,788.11 | depts: PUC
+
+#9 [High] Identical after cleanup, similarity 100
+   1: PACIFIC OCEAN SPORTS  | 16 payments, $180,409.75 | depts: DEM, POL
+   2: Pacific Ocean Sports  | 3 payments, $39,893.40 | depts: FIR
+
+#10 [High] Identical after cleanup, similarity 100
+   1: ACTION TARGET  | 3 payments, $59,208.79 | depts: POL
+   2: ACTION TARGET INC  | 4 payments, $11,140.51 | depts: ADP, AIR
+
+#11 [High] Identical after cleanup, similarity 100
+   1: DIRECTV INC  | 88 payments, $27,856.65 | depts: DPH, SHF, FIR, DEM, POL
+   2: DIRECTV LLC  | 20 payments, $39,400.05 | depts: PRT, DPH
+
+#12 [High] Identical after cleanup, similarity 100
+   1: KNORR SYSTEMS INT'L. LLC  | 20 payments, $50,570.89 | depts: REC, DPH
+   2: Knorr Systems Int'l  | 7 payments, $14,662.65 | depts: REC
+   shared: 0 contract(s), 1 PO(s)
+
+#13 [High] Identical after cleanup, similarity 100
+   1: METRO MOBILE COMMUNICATIONS  | 3 payments, $1,925.60 | depts: AIR, POL
+   2: Metro Mobile Communications  | 6 payments, $55,723.25 | depts: POL, AIR
+
+#14 [High] Identical after cleanup, similarity 100
+   1: GENERAL PLUMBING SUPPLY  | 11 payments, $33,702.99 | depts: PUC
+   2: GENERAL PLUMBING SUPPLY CO INC  | 15 payments, $16,431.10 | depts: PUC
+
+#15 [High] Identical after cleanup, similarity 100
+   1: FLO-LINE TECHNOLOGY INC  | 5 payments, $38,633.30 | depts: PUC, REC
+   2: FLO-LINE TECHNOLOGY LLC  | 1 payments, $11,326.65 | depts: PUC
+
+#16 [High] Identical after cleanup, similarity 100
+   1: THE BERWYN GROUP  | 1 payments, $39,249.00 | depts: RET
+   2: The Berwyn Group Inc  | 2 payments, $168.00 | depts: RET
+
+#17 [High] Identical after cleanup, similarity 100
+   1: D & D UPHOLSTERY INC  | 4 payments, $16,472.99 | depts: MTA
+   2: D&D Upholstery Inc  | 3 payments, $16,780.74 | depts: MTA
+
+#18 [High] Identical after cleanup, similarity 100
+   1: ECHELON FINE PRINTING  | 3 payments, $527.61 | depts: DAT
+   2: Echelon Fine Printing  | 78 payments, $29,596.92 | depts: CSC, POL, RET, BOS, REC, CPC, DAT
+
+#19 [High] Identical after cleanup, similarity 100
+   1: Qtrac Inc  | 22 payments, $18,802.10 | depts: ASR
+   2: Qtrac LLC  | 1 payments, $8,399.04 | depts: RNT
+
+#20 [High] Identical after cleanup, similarity 100
+   1: Sonora Lumber  | 9 payments, $15,215.68 | depts: PUC
+   2: Sonora Lumber Company  | 3 payments, $4,970.30 | depts: PUC
+
+All Medium-confidence candidates:
+
+#26 [Medium] similarity 95
+   1: COMPUTERLAND SILICON VALLEY  | 98 payments, $1,715,973.53 | depts: DEM, DPH, ADM, PUC, FIR, AIR, DPW, MTA
+   2: ComputerLand of Silicon Valley  | 1,016 payments, $15,614,471.63 | depts: FIR, REC, ENV, DPH, ECN, GEN, CON, DEM, POL, REG, HSS, BOS, JUV, HOM, ART, RET, WAR, HRD, LIB, CAT, TTX, HRC, PDR, TIS, MYR, ADM, ASR, PUC, DPW, ETH, HSA, MTA, AIR, DAT, LLB
+
+#27 [Medium] similarity 95
+   1: CA DEPARTMENT OF GENERAL SERVICES  | 11 payments, $539,404.50 | depts: RET
+   2: DEPARTMENT OF GENERAL SERVICES  | 208 payments, $10,933,461.70 | depts: DEM, POL, CAT, PRT, DBI, PUC
+
+#28 [Medium] similarity 100
+   1: GHD HCI JV  | 69 payments, $674,018.63 | depts: PUC
+   2: HCI GHD JV  | 12 payments, $90,552.79 | depts: PUC
+
+#29 [Medium] similarity 95
+   1: SIGHTLINE INC  | 1 payments, $75,000.00 | depts: AIR
+   2: SIGHTLINES LLC  | 1 payments, $40,150.00 | depts: ADM
+
+#30 [Medium] similarity 95
+   1: P-CARD ONLY US BANK N.A - SFGH  | 20 payments, $22,594.53 | depts: DPH
+   2: P-CARD ONLY US BANK N.A. - SHF  | 61 payments, $21,337.70 | depts: SHF
+
+#31 [Medium] similarity 96
+   1: P-CARD ONLY  US BANK N.A. - CAT  | 52 payments, $19,009.33 | depts: CAT
+   2: P-CARD ONLY US BANK N.A. - DAT  | 25 payments, $12,621.19 | depts: DAT
+
+#32 [Medium] similarity 96
+   1: P-CARD ONLY US BANK N.A - ART  | 67 payments, $8,053.70 | depts: ART
+   2: P-CARD ONLY US BANK N.A. - AIR  | 25 payments, $6,338.00 | depts: AIR
+
+#33 [Medium] similarity 96
+   1: P-CARD ONLY US BANK N.A. - CON  | 1 payments, $0.25 | depts: CON
+   2: P-CARD ONLY US BANK N.A. - ECN  | 3 payments, $6,819.57 | depts: MYR
+
+Top 15 Low-confidence candidates by combined amount:
+- #34 (91): PNC BANK NATIONAL ASSOCIATION [$497,562.50]  vs  US BANK NATIONAL ASSOCIATION [$684,330,007.90]
+- #35 (91): REGENTS OF THE UNIVERSITY OF CALIFORNIA [$334,541,727.39]  vs  The Regents of the Univ of California [$140,228.34]
+- #36 (92): AECOM TECHNICAL SERVICES INC [$21,741,200.23]  vs  SERCO TECHNICAL SERVICES INC [$1,080.00]
+- #37 (91): VORTECH INDUSTRIES [$12,180,008.71]  vs  VORTEX INDUSTRIES INC [$7,491.38]
+- #38 (91): COUNTY OF SAN MATEO [$811,231.98]  vs  SAN MATEO COUNTY [$10,024,998.75]
+- #39 (92): C L W BUILDERS INC [$9,585,520.26]  vs  L C BUILDERS INC. [$594,006.45]
+- #40 (92): APA FAMILY SUPPORT SERVICES [$4,925,345.53]  vs  FAMILY SUPPORT SERVICES [$1,708,045.09]
+- #41 (90): DOWNTOWN COMMUNITY BENEFIT DISTRICT [$5,875,255.08]  vs  Japantown Community Benefit District Inc [$495,181.20]
+- #42 (90): ALAMEDA COUNTY [$2,061,995.43]  vs  COUNTY OF ALAMEDA [$112,720.99]
+- #43 (92): J M EQUIPMENT CO INC [$7,990.00]  vs  JRM EQUIPMENT LLC [$1,629,268.58]
+- #44 (93): MOFFATT & NICHOL & AGS JV [$609,723.50]  vs  Moffatt & Nichol AGS JV [$605,326.12]
+- #45 (91): BAXTER HEALTHCARE CORP [$466,230.34]  vs  BAYER HEALTHCARE LLC [$445,158.34]
+- #46 (91): IEM International Inc. [$136,346.00]  vs  INTERNATIONAL FIRE INC [$694,853.19]
+- #47 (94): PAE CONSULTING ENGINEERS INC. [$67,789.72]  vs  SAGE CONSULTING ENGINEERS INC [$638,491.18]
+- #48 (90): CARL ZEISS MEDITEC INC [$43,713.20]  vs  Carl Zeiss Meditec USA Inc [$660,571.48]
+
+High-confidence candidates not shown above:
+- #21 Identical after cleanup: COMPASSIONATE COMMUNITY CARE [4, $840.00]  vs  Compassionate Community Care [20, $16,482.50]
+- #22 Identical after cleanup: EXTREME PIZZA [16, $6,983.36]  vs  Extreme Pizza [16, $8,711.40]
+- #23 Identical after cleanup: LAHUE & ASSOCIATES [1, $267.25]  vs  LaHue and Associates [8, $15,336.21]
+- #24 Identical after cleanup: HENDERSON MARINE SUPPLY LLC [1, $1,265.56]  vs  Henderson Marine Supply Inc. [3, $10,971.62]
+- #25 Identical after cleanup: LUSTRE-CAL CORPORATION [1, $1,377.68]  vs  Lustre-Cal LLC [1, $2,561.69]
+
+======================================================================
+5D. SAME AMOUNT PAID TO BOTH NAMES
+======================================================================
+Matching payments found: 5, $20,947.81
+- High confidence vendor pairs: 3 matches, $16,391.81
+- Low confidence vendor pairs: 2 matches, $4,556.00
+
+Top 15 matches by amount:
+
+candidate #5 [High] $6,224.78  Rent/Lease-Building/Structure
+   1: The Kelsey Civic Center LLC | HSA Human Services Agency | 2025-08-21
+   2: The Kelsey Civic Center LP | HSA Human Services Agency | 2025-09-10  (20 days apart)
+
+candidate #5 [High] $6,224.78  Rent/Lease-Building/Structure
+   1: The Kelsey Civic Center LLC | HSA Human Services Agency | 2025-08-21
+   2: The Kelsey Civic Center LP | HSA Human Services Agency | 2025-07-22  (30 days apart)
+
+candidate #11 [High] $3,942.25  Other Current Expenses
+   1: DIRECTV INC | DPH Public Health | 2026-01-29
+   2: DIRECTV LLC | DPH Public Health | 2026-02-25  (27 days apart)
+
+candidate #52 [Low] $2,278.00  Hospital: Clinic/Lab Supplies
+   1: A S D SPECIALTY HEALTHCARE INC | DPH Public Health | 2025-07-03
+   2: ASD Specialty Healthcare LLC | DPH Public Health | 2025-07-30  (27 days apart)
+
+candidate #52 [Low] $2,278.00  Hospital: Clinic/Lab Supplies
+   1: A S D SPECIALTY HEALTHCARE INC | DPH Public Health | 2025-07-01
+   2: ASD Specialty Healthcare LLC | DPH Public Health | 2025-07-30  (29 days apart)
+
+Saved: outputs/exceptions/vendor_duplicate_candidates.csv
+Saved: outputs/exceptions/cross_vendor_payment_matches.csv

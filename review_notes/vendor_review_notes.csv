@@ -1,0 +1,44 @@
+vendor_1,vendor_2,reviewer_assessment,rationale
+STRYKER SALES CORPORATION,Stryker Sales LLC,Needs inquiry,"Legal form differs (Corporation vs LLC), so this could be a conversion or two entities. Both records are active with DPH and DEM."
+FERGUSON ENTERPRISES INC,Ferguson Enterprises LLC,Needs inquiry,"Legal form differs (INC vs LLC). The LLC record has only 3 small payments, which suggests a newer or stray record."
+GENFARE,Genfare LLC,Same supplier,"Same name, one record missing the LLC suffix. Both used by MTA."
+CITY AUTO SUPPLY,City Auto Supply LLC,Same supplier,"Same name, one record missing the LLC suffix. Both records used all year by the same five departments (583 and 2,974 payments), so purchases are split across two vendor records."
+The Kelsey Civic Center LLC,The Kelsey Civic Center LP,Needs inquiry,"Legal form differs (LLC vs LP), so these may be separate entities. The same $6,224.78 monthly amount was paid to the LP in July and September and to the LLC in August, which looks like one monthly payment split across two records rather than a double payment."
+PACIFIC AUXILIARY FIRE ALARM CO,PACIFIC AUXILIARY FIRE ALARM COMPANY,Same supplier,"CO and COMPANY are the same suffix, and the same 2 POs were paid under both names. Strongest vendor master finding."
+GRANICUS INC,GRANICUS LLC,Needs inquiry,"Legal form differs (INC vs LLC), used by different departments."
+BORGES & MAHONEY CO.,BORGES & MAHONEY INC,Needs inquiry,"Legal form differs (CO. vs INC), both used by PUC."
+PACIFIC OCEAN SPORTS,Pacific Ocean Sports,Same supplier,Identical except capitalization.
+ACTION TARGET,ACTION TARGET INC,Same supplier,"Same name, one record missing the INC suffix."
+DIRECTV INC,DIRECTV LLC,Needs inquiry,"Legal form differs (INC vs LLC). The same $3,942.25 was paid to one name in January and the other in February, which looks like one monthly bill split across two records."
+KNORR SYSTEMS INT'L. LLC,Knorr Systems Int'l,Same supplier,"Same name, one record missing the LLC suffix, and the same PO was paid under both names."
+METRO MOBILE COMMUNICATIONS,Metro Mobile Communications,Same supplier,Identical except capitalization.
+GENERAL PLUMBING SUPPLY,GENERAL PLUMBING SUPPLY CO INC,Same supplier,"Same name, one record missing the suffix. Both used by PUC."
+FLO-LINE TECHNOLOGY INC,FLO-LINE TECHNOLOGY LLC,Needs inquiry,Legal form differs (INC vs LLC).
+THE BERWYN GROUP,The Berwyn Group Inc,Same supplier,"Same name, one record missing the INC suffix. Both used by RET."
+D & D UPHOLSTERY INC,D&D Upholstery Inc,Same supplier,Identical except spacing and capitalization. Both used by MTA.
+ECHELON FINE PRINTING,Echelon Fine Printing,Same supplier,Identical except capitalization.
+Qtrac Inc,Qtrac LLC,Needs inquiry,"Legal form differs (INC vs LLC), used by different departments."
+Sonora Lumber,Sonora Lumber Company,Same supplier,"Same name, one record missing the suffix. Both used by PUC."
+COMPASSIONATE COMMUNITY CARE,Compassionate Community Care,Same supplier,Identical except capitalization.
+EXTREME PIZZA,Extreme Pizza,Same supplier,Identical except capitalization.
+LAHUE & ASSOCIATES,LaHue and Associates,Same supplier,Same name written with & and with 'and'.
+HENDERSON MARINE SUPPLY LLC,Henderson Marine Supply Inc.,Needs inquiry,Legal form differs (LLC vs Inc).
+LUSTRE-CAL CORPORATION,Lustre-Cal LLC,Needs inquiry,Legal form differs (Corporation vs LLC).
+COMPUTERLAND SILICON VALLEY,ComputerLand of Silicon Valley,Same supplier,"Largest duplicate vendor record found. Same company with and without 'of': 98 payments ($1.7M) under one record and 1,016 ($15.6M) under the other, with overlapping departments."
+CA DEPARTMENT OF GENERAL SERVICES,DEPARTMENT OF GENERAL SERVICES,Needs inquiry,Very likely the same state agency. The Retirement System uses one record and six other departments use the other.
+GHD HCI JV,HCI GHD JV,Same supplier,Same joint venture partners with the name order reversed. Both used by PUC.
+SIGHTLINE INC,SIGHTLINES LLC,Needs inquiry,"One payment each, different departments and legal forms. May be unrelated companies."
+P-CARD ONLY US BANK N.A - SFGH,P-CARD ONLY US BANK N.A. - SHF,Different suppliers,"Department-specific purchasing card accounts, set up separately by design."
+P-CARD ONLY  US BANK N.A. - CAT,P-CARD ONLY US BANK N.A. - DAT,Different suppliers,"Department-specific purchasing card accounts, set up separately by design."
+P-CARD ONLY US BANK N.A - ART,P-CARD ONLY US BANK N.A. - AIR,Different suppliers,"Department-specific purchasing card accounts, set up separately by design."
+P-CARD ONLY US BANK N.A. - CON,P-CARD ONLY US BANK N.A. - ECN,Different suppliers,"Department-specific purchasing card accounts, set up separately by design."
+REGENTS OF THE UNIVERSITY OF CALIFORNIA,The Regents of the Univ of California,Same supplier,"Same institution, one record abbreviates University. Rated low only because the abbreviation lowers the name score."
+COUNTY OF SAN MATEO,SAN MATEO COUNTY,Same supplier,Same government with the words reordered.
+ALAMEDA COUNTY,COUNTY OF ALAMEDA,Same supplier,Same government with the words reordered.
+A S D SPECIALTY HEALTHCARE INC,ASD Specialty Healthcare LLC,Needs inquiry,"Spacing and legal form differ. The same $2,278.00 was paid to both names in July 2025."
+VORTECH INDUSTRIES,VORTEX INDUSTRIES INC,Different suppliers,Names differ by one letter but appear to be different companies.
+PNC BANK NATIONAL ASSOCIATION,US BANK NATIONAL ASSOCIATION,Different suppliers,Different banks.
+AECOM TECHNICAL SERVICES INC,SERCO TECHNICAL SERVICES INC,Different suppliers,Different companies with a similar suffix.
+C L W BUILDERS INC,L C BUILDERS INC.,Different suppliers,"Different initials, likely different companies."
+DOWNTOWN COMMUNITY BENEFIT DISTRICT,Japantown Community Benefit District Inc,Different suppliers,Different districts.
+APA FAMILY SUPPORT SERVICES,FAMILY SUPPORT SERVICES,Needs inquiry,One name contains the other. Could be the same nonprofit or two organizations.

@@ -1,0 +1,174 @@
+SETTINGS USED
+- IN_SCOPE_CHARACTERS: ['NON_PERS_SVCS', 'MTL_SUPP', 'CAP_OUTLAY']
+- EXCLUDED_OBJECTS: ['Taxes: Licenses/Permits']
+- MIN_AMOUNT: 1000
+- HIGH_WINDOW_DAYS: 30
+- MEDIUM_WINDOW_DAYS: 14
+- RECURRING_MIN_COUNT: 4
+
+======================================================================
+3A. VOUCHER KEY CHECK
+======================================================================
+Vouchers appearing on more than one row: 5,998
+- rows differ by department: 42
+- rows differ by vendor:     124
+- rows differ by PO:         5,954
+- rows differ by contract:   948
+(one voucher can differ on more than one field)
+
+======================================================================
+3B. SCOPE
+======================================================================
+Status                                 payments             amount paid
+OUT: not procurement spending            46,819       $9,832,068,404.46
+IN SCOPE                                350,716       $6,098,334,895.09
+OUT: placeholder payee                   57,048         $535,130,370.51
+OUT: taxes and permits                   10,900         $412,515,149.70
+OUT: zero amount                         34,426                   $0.00
+REVERSAL: kept for matching               3,916         $-35,146,667.12
+
+Control total: scoped $16,842,902,152.64 vs payments $16,842,902,152.64 -> TIES
+
+Payments tested for duplicates (in scope and >= $1,000): 133,800 payments, $6,041,917,297.96
+
+In-scope spending by category:
+- Non-Personnel Services: 116,100 payments, $4,228,943,683.67
+- Capital Outlay: 1,842 payments, $1,291,506,338.46
+- Materials & Supplies: 232,774 payments, $577,884,872.96
+
+======================================================================
+3C. DUPLICATE PAYMENT TEST
+======================================================================
+Flagged pairs: 31,126
+
+Risk    Status                                 pairs    amount (sum of 2nd payments)
+HIGH    Likely recurring: review              23,615                 $439,311,724.56
+HIGH    Likely resolved: reversal found          273                     $952,674.58
+HIGH    Open: needs review                     1,831                  $40,346,294.65
+MEDIUM  Likely recurring: review               4,281                  $18,223,485.20
+MEDIUM  Likely resolved: reversal found          208                   $2,078,441.47
+MEDIUM  Open: needs review                       918                   $8,378,525.89
+
+Potential exposure on OPEN flags (each second payment counted once):
+- HIGH: 1,666 payments, $37,652,800.10
+- MEDIUM: 868 payments, $7,800,127.01
+
+Flagged pairs where the two payments used different spellings of the vendor name: 0
+Flagged pairs paid by two different departments: 232
+
+Days between the two payments (open flags):
+- same day: 1,243
+- 1-3 days: 244
+- 4-7 days: 301
+- 8-14 days: 459
+- 15-30 days: 502
+
+Top 20 OPEN flags by amount:
+
+#3 [HIGH] $2,406,943.50  Professional/Specialized Svcs
+   1: MOSCONE CENTER JOINT VENTURE | ADM GSA - City Administrator | PO 000094503501 | 2025-07-14
+   2: MOSCONE CENTER JOINT VENTURE | ADM GSA - City Administrator | PO 000094503501 | 2025-08-05  (22 days later)
+
+#4 [HIGH] $1,936,904.34  Equipment Purchase
+   1: Siemens Mobility Inc. | MTA Municipal Transprtn Agncy | PO 000040573901 | 2026-06-18
+   2: Siemens Mobility Inc. | MTA Municipal Transprtn Agncy | PO 000040573901 | 2026-06-22  (4 days later)
+
+#5 [HIGH] $1,620,407.09  Bldg: Structures/Improvements
+   1: THE DUTRA GROUP | PRT Port | PO 000101035701 | 2026-02-19
+   2: THE DUTRA GROUP | PRT Port | PO 000101035701 | 2026-03-13  (22 days later)
+
+#6 [HIGH] $1,595,360.00  Power for Resale
+   1: NEXTERA ENERGY MARKETING LLC | PUC Public Utilities Commsn | PO 000094837701 | 2026-01-13
+   2: NEXTERA ENERGY MARKETING LLC | PUC Public Utilities Commsn | PO 000094837701 | 2026-02-10  (28 days later)
+
+#8 [HIGH] $1,362,608.00  Power for Resale
+   1: Morgan Stanley Capital Group Inc. | PUC Public Utilities Commsn | PO 000094855101 | 2025-08-11
+   2: Morgan Stanley Capital Group Inc. | PUC Public Utilities Commsn | PO 000094855101 | 2025-09-09  (29 days later)
+
+#21 [HIGH] $1,158,403.80  Equipment Purchase
+   1: Siemens Mobility Inc. | MTA Municipal Transprtn Agncy | PO 000040573901 | 2026-04-17
+   2: Siemens Mobility Inc. | MTA Municipal Transprtn Agncy | PO 000040573901 | 2026-05-06  (19 days later)
+
+#22 [HIGH] $1,100,732.70  Professional/Specialized Svcs
+   1: UCSF CLINIC PRAC GRP SFGH/COMM FOCUS PGM | DPH Public Health | PO 000087508502 | 2025-07-02
+   2: UCSF CLINIC PRAC GRP SFGH/COMM FOCUS PGM | DPH Public Health | PO 000087508502 | 2025-07-17  (15 days later)
+
+#35 [HIGH] $901,825.45  Maint Svcs-Equipment
+   1: Alstom Transport USA Inc | AIR Airport Commission | PO 000084672402 | 2025-07-07
+   2: Alstom Transport USA Inc | AIR Airport Commission | PO 000084672402 | 2025-07-07  (0 days later)
+
+#36 [HIGH] $901,825.45  Maint Svcs-Equipment
+   1: Alstom Transport USA Inc | AIR Airport Commission | PO 000084672402 | 2025-07-07
+   2: Alstom Transport USA Inc | AIR Airport Commission | PO 000084672402 | 2025-07-31  (24 days later)
+
+#37 [HIGH] $901,825.45  Maint Svcs-Equipment
+   1: Alstom Transport USA Inc | AIR Airport Commission | PO 000084672402 | 2025-07-07
+   2: Alstom Transport USA Inc | AIR Airport Commission | PO 000084672402 | 2025-07-31  (24 days later)
+
+#54 [HIGH] $767,640.91  Professional/Specialized Svcs
+   1: CLARK CONSTRUCTION GROUP - CALIF LP | PUC Public Utilities Commsn | PO 000089867302 | 2025-12-08
+   2: CLARK CONSTRUCTION GROUP - CALIF LP | PUC Public Utilities Commsn | PO 000089867302 | 2025-12-12  (4 days later)
+
+#55 [HIGH] $765,287.80  Equipment Purchase
+   1: Siemens Mobility Inc. | MTA Municipal Transprtn Agncy | PO 000040573902 | 2025-08-21
+   2: Siemens Mobility Inc. | MTA Municipal Transprtn Agncy | PO 000040573902 | 2025-09-02  (12 days later)
+
+#60 [HIGH] $626,800.32  Equipment Purchase
+   1: Nova Bus (US) Inc. | MTA Municipal Transprtn Agncy | PO 000061898205 | 2025-12-23
+   2: Nova Bus (US) Inc. | MTA Municipal Transprtn Agncy | PO 000061898205 | 2025-12-24  (1 days later)
+
+#264 [MEDIUM] $492,433.81  Equipment Purchase
+   1: COAST COUNTIES TRUCK & EQUIPMENT CO | DPW Public Works | PO 000083359508 | 2025-12-22
+   2: COAST COUNTIES TRUCK & EQUIPMENT CO | DPW Public Works | PO 000083359509 | 2025-12-22  (0 days later)
+
+#270 [HIGH] $447,310.00  Power for Resale
+   1: Morgan Stanley Capital Group Inc. | PUC Public Utilities Commsn | PO 000094858201 | 2025-08-11
+   2: Morgan Stanley Capital Group Inc. | PUC Public Utilities Commsn | PO 000094858201 | 2025-09-09  (29 days later)
+
+#271 [HIGH] $434,108.00  Power for Resale
+   1: Morgan Stanley Capital Group Inc. | PUC Public Utilities Commsn | PO 000094861001 | 2025-08-11
+   2: Morgan Stanley Capital Group Inc. | PUC Public Utilities Commsn | PO 000094861001 | 2025-09-09  (29 days later)
+
+#272 [HIGH] $425,012.04  Rent/Lease-Building/Structure
+   1: SFII 1390 MARKET ST LLC | CAT City Attorney | PO 000094240901 | 2026-01-29
+   2: SFII 1390 MARKET ST LLC | CAT City Attorney | PO 000094240901 | 2026-02-24  (26 days later)
+
+#273 [HIGH] $425,012.04  Rent/Lease-Building/Structure
+   1: SFII 1390 MARKET ST LLC | CAT City Attorney | PO 000094240901 | 2026-02-24
+   2: SFII 1390 MARKET ST LLC | CAT City Attorney | PO 000094240901 | 2026-03-26  (30 days later)
+
+#427 [HIGH] $351,740.00  Equipment Purchase
+   1: TOWNE FORD SALES | PUC Public Utilities Commsn | PO 000078884403 | 2025-07-02
+   2: TOWNE FORD SALES | PUC Public Utilities Commsn | PO 000078884403 | 2025-07-02  (0 days later)
+
+#433 [HIGH] $351,269.49  Rent/Lease-Building/Structure
+   1: PROLOGIS L.P. | MTA Municipal Transprtn Agncy | PO 000094368301 | 2026-03-10
+   2: PROLOGIS L.P. | MTA Municipal Transprtn Agncy | PO 000094368301 | 2026-03-30  (20 days later)
+
+Top 10 vendors by OPEN flagged amount:
+- SIEMENS MOBILITY: 11 flags, $3,999,102.27
+- MCKESSON PLASMA AND BIOLOGICS: 209 flags, $2,735,645.72
+- ALSTOM TRANSPORT USA: 3 flags, $2,705,476.35
+- MOSCONE CENTER JOINT VENTURE: 1 flags, $2,406,943.50
+- MORGAN STANLEY CAPITAL GROUP: 3 flags, $2,244,026.00
+- DUTRA GROUP: 1 flags, $1,620,407.09
+- NEXTERA ENERGY MARKETING: 1 flags, $1,595,360.00
+- MCKESSON: 392 flags, $1,572,795.67
+- TOWNE FORD SALES: 16 flags, $1,295,689.14
+- UCSF CLINIC PRAC GRP SFGH COMM FOCUS PGM: 2 flags, $1,118,191.00
+
+Top 10 departments by OPEN flagged amount:
+- DPH Public Health: 1,213 flags, $11,540,937.26
+- PUC Public Utilities Commsn: 366 flags, $9,001,608.02
+- MTA Municipal Transprtn Agncy: 186 flags, $7,631,458.29
+- AIR Airport Commission: 80 flags, $3,880,728.49
+- ADM GSA - City Administrator: 144 flags, $3,499,761.59
+- PRT Port: 28 flags, $2,103,354.81
+- FIR Fire Department: 33 flags, $1,481,040.42
+- DPW Public Works: 127 flags, $1,343,068.16
+- HSA Human Services Agency: 50 flags, $1,273,490.27
+- CAT City Attorney: 33 flags, $1,207,072.52
+
+Saved: data/processed/scoped_payments.parquet
+Saved: outputs/scope_summary.csv
+Saved: outputs/exceptions/duplicate_payment_pairs.csv

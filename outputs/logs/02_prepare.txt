@@ -1,0 +1,162 @@
+
+======================================================================
+A. ONE ROW PER PAYMENT
+======================================================================
+Raw rows:          511,226
+Payment rows:      503,825
+Vouchers that still appear on more than one row: 5,998
+  (should be 0 or close to it; if not, one voucher has different vendors,
+   POs, or departments on its lines, which is a data quality finding itself)
+Payments charged to more than one spending category: 141
+Payments with no readable approximate date: 0
+
+======================================================================
+B. CONTROL TOTAL CHECK
+======================================================================
+Raw total paid:      $16,842,902,152.64
+Payment table total: $16,842,902,152.64
+Difference:          $0.00  -> TIES
+
+Payments by sign:
+- Positive                         462,338 payments   $16,914,619,680.18
+- Zero                              37,310 payments   $0.00
+- Negative (reversals/credits)       4,177 payments   $-71,717,527.54
+
+Direct payments (no PO): 131,368 payments, $8,520,064,541.55
+'Single Payment Payees' placeholder: 57,048 payments, $535,130,370.51
+
+======================================================================
+C. VENDOR NAME STANDARDIZATION
+======================================================================
+Unique vendor names as written:  6,521
+Unique names after standardizing: 6,496
+Names that merged together:       25
+
+Top 15 standardized names that cover more than one written name (by amount paid):
+
+- STRYKER SALES  (2 variants, $4,510,504.56)
+    STRYKER SALES CORPORATION  |  Stryker Sales LLC
+
+- FERGUSON ENTERPRISES  (2 variants, $2,079,756.04)
+    FERGUSON ENTERPRISES INC  |  Ferguson Enterprises LLC
+
+- GENFARE  (2 variants, $1,363,757.60)
+    Genfare LLC  |  GENFARE
+
+- CITY AUTO SUPPLY  (2 variants, $1,089,185.35)
+    City Auto Supply LLC  |  CITY AUTO SUPPLY
+
+- KELSEY CIVIC CENTER  (2 variants, $899,091.92)
+    The Kelsey Civic Center LP  |  The Kelsey Civic Center LLC
+
+- PACIFIC AUXILIARY FIRE ALARM  (2 variants, $338,055.21)
+    PACIFIC AUXILIARY FIRE ALARM CO  |  PACIFIC AUXILIARY FIRE ALARM COMPANY
+
+- GRANICUS  (2 variants, $310,458.40)
+    GRANICUS LLC  |  GRANICUS INC
+
+- BORGES AND MAHONEY  (2 variants, $237,305.81)
+    BORGES & MAHONEY CO.  |  BORGES & MAHONEY INC
+
+- PACIFIC OCEAN SPORTS  (2 variants, $220,303.15)
+    PACIFIC OCEAN SPORTS  |  Pacific Ocean Sports
+
+- ACTION TARGET  (2 variants, $70,349.30)
+    ACTION TARGET INC  |  ACTION TARGET
+
+- DIRECTV  (2 variants, $67,256.70)
+    DIRECTV INC  |  DIRECTV LLC
+
+- KNORR SYSTEMS INT L  (2 variants, $65,233.54)
+    Knorr Systems Int'l  |  KNORR SYSTEMS INT'L. LLC
+
+- METRO MOBILE COMMUNICATIONS  (2 variants, $57,648.85)
+    Metro Mobile Communications  |  METRO MOBILE COMMUNICATIONS
+
+- GENERAL PLUMBING SUPPLY  (2 variants, $50,134.09)
+    GENERAL PLUMBING SUPPLY CO INC  |  GENERAL PLUMBING SUPPLY
+
+- FLO LINE TECHNOLOGY  (2 variants, $49,959.95)
+    FLO-LINE TECHNOLOGY LLC  |  FLO-LINE TECHNOLOGY INC
+
+======================================================================
+D. SPENDING BY CATEGORY (for deciding scope)
+======================================================================
+Category (character)                             payments           amount paid   share
+Non-Personnel Services [NON_PERS_SVCS]            143,171     $4,619,597,832.86   27.4%
+Not Reported Liability Account [NOT_REPORTED          549     $2,308,849,595.68   13.7%
+Debt Service [DEBT_SERVICE]                           533     $1,993,744,355.41   11.8%
+City Grant Program [CITY_GR_PROG]                  23,927     $1,455,305,905.13    8.6%
+Fiduciary-Benefit Payments [FID_BEN_PMT]            1,918     $1,347,178,754.55    8.0%
+Capital Outlay [CAP_OUTLAY]                         2,293     $1,290,741,002.37    7.7%
+Current Liabilities [CURR_LIAB]                    27,677     $1,130,346,109.54    6.7%
+Other Revenues [OTH_REV]                              775       $682,345,239.66    4.1%
+Materials & Supplies [MTL_SUPP]                   259,515       $571,411,681.75    3.4%
+Aid Payments [AID_PMTS]                            11,233       $379,474,483.35    2.3%
+Other Support/Care of Persons [OTH_SUP_CARE_          484       $300,428,828.53    1.8%
+Business Taxes [BUS_TAX]                            7,120       $160,087,089.37    1.0%
+Current Assets [CURR_ASSETS]                        1,102       $154,846,281.53    0.9%
+Contributions Ret/HSS/HlthCare [CONTRIB_RET_           21       $150,480,690.59    0.9%
+Non-Current Assets [NONCURR_ASSETS]                     9        $90,349,595.80    0.5%
+Intergovernmental: State [INTERGOV_REV_ST]             15        $59,214,162.12    0.4%
+Property Taxes [PROP_TAX]                              23        $46,927,865.49    0.3%
+Charges for Services [CHGS_FOR_SERVICES]            3,188        $46,369,118.49    0.3%
+Aid Assistance [AID_ASSIST]                         4,012        $19,530,435.78    0.1%
+Rents & Concessions [RENTS_CONCESSIONS]               263        $14,180,536.82    0.1%
+Other Local Taxes [OTHER_LOC_TAX]                     205        $10,176,045.08    0.1%
+Mandatory Fringe Benefits [MAND_FRING_BEN]             71         $5,869,456.52    0.0%
+Interest & Investment Income [INT_INV_INC]          5,451         $2,057,435.28    0.0%
+Fines, Forfeiture, & Penalties [FINE_FORF_PE       10,001         $1,082,570.92    0.0%
+Capitalized Expenditures [CAP_EXP]                     17           $776,435.17    0.0%
+Intergovernmental: Federal [INTER_REV_FED]              8           $694,935.61    0.0%
+Contribution Refund/Distrib [CONT_REF_DIST]            26           $466,539.91    0.0%
+Licenses, Permits,& Franchises [LIC_PERM_FRA          187           $107,603.57    0.0%
+Salaries [SALARIES]                                    12            $87,460.34    0.0%
+Programmatic Projects [PROG_PROJ]                       7            $77,048.55    0.0%
+Overhead and Allocations [OH_ALLOCS]                    3            $45,864.68    0.0%
+Services Of Other Depts [SVCS_OTHER_DEPTS]              7            $33,009.19    0.0%
+Facilities Maintenance [FAC_MNTC]                       2            $18,183.00    0.0%
+
+Top 40 sub-categories (object) by amount paid:
+- Professional/Specialized Svcs  (in Non-Personnel Services): 52,435 payments, $3,019,496,569.72
+- Community Based Org Srvcs  (in City Grant Program): 23,547 payments, $1,451,793,095.69
+- HlthSvcFnd-HMO/Dental/Disab  (in Fiduciary-Benefit Payments): 722 payments, $1,284,257,434.29
+- Unearned Rev and Other Liabs  (in Current Liabilities): 27,641 payments, $1,127,304,754.08
+- Bldg: Structures/Improvements  (in Capital Outlay): 716 payments, $1,071,779,896.26
+- Debt Interest & Other Charges  (in Debt Service): 390 payments, $1,011,174,166.47
+- Debt Redemption  (in Debt Service): 88 payments, $957,243,030.49
+- Other Non-Operating Revenues  (in Other Revenues): 286 payments, $673,837,109.95
+- 230490CONFedIncomeTaxTaxUnIt1  (in Not Reported Liability Account): 27 payments, $670,766,975.21
+- Taxes: Licenses/Permits  (in Non-Personnel Services): 10,915 payments, $412,586,884.67
+- Power for Resale  (in Non-Personnel Services): 1,272 payments, $380,011,509.91
+- 230750RETM&DDeferredCompensati  (in Not Reported Liability Account): 27 payments, $313,930,592.48
+- Loans Issued By City  (in Other Support/Care of Persons): 467 payments, $297,073,331.14
+- 230490CONStateIncomeTaxTaxU1  (in Not Reported Liability Account): 27 payments, $280,981,762.15
+- Other Current Expenses  (in Non-Personnel Services): 25,974 payments, $257,481,172.68
+- 232660CONSocSecCityShare,Gener  (in Not Reported Liability Account): 27 payments, $240,296,279.49
+- 230490CONOasdiTaxTaxUnit1  (in Not Reported Liability Account): 27 payments, $240,235,844.20
+- 232840CONFederalIncomeTax,TaxU  (in Not Reported Liability Account): 24 payments, $238,664,526.46
+- Equipment Purchase  (in Capital Outlay): 1,516 payments, $216,731,423.02
+- Hospital: Clinic/Lab Supplies  (in Materials & Supplies): 110,732 payments, $214,023,985.19
+- IHSS Ip Payments  (in Aid Payments): 8 payments, $202,102,334.04
+- Gross Receipts Tax  (in Business Taxes): 3,794 payments, $158,573,572.52
+- Retirement Contributions  (in Contributions Ret/HSS/HlthCare): 21 payments, $150,480,690.59
+- Rent/Lease-Building/Structure  (in Non-Personnel Services): 5,866 payments, $140,684,919.01
+- IHSS Ip Public Authority Admin  (in Aid Payments): 13 payments, $120,251,274.36
+- Maint Svcs-Equipment  (in Non-Personnel Services): 9,374 payments, $118,650,351.88
+- Maint Svcs-Building & Structur  (in Non-Personnel Services): 7,409 payments, $113,773,288.65
+- Other Materials/Supplies  (in Materials & Supplies): 59,690 payments, $103,078,608.60
+- Receivable: Interest and Other  (in Current Assets): 142 payments, $98,338,939.52
+- Restr Assts Dep/Inv OutsideTR  (in Non-Current Assets): 9 payments, $90,349,595.80
+- 232660CONMedicareCityShare,Gen  (in Not Reported Liability Account): 27 payments, $75,846,410.99
+- 230490CONMedicareTaxTaxUnit1  (in Not Reported Liability Account): 27 payments, $75,830,300.27
+- 232840CONStateIncomeTax,TaxUni  (in Not Reported Liability Account): 21 payments, $73,754,346.76
+- Building/Construction Supplies  (in Materials & Supplies): 24,209 payments, $66,061,470.96
+- Inventories  (in Materials & Supplies): 9,481 payments, $60,292,468.36
+- State-Homeowner Prop Tax Relie  (in Intergovernmental: State): 9 payments, $58,667,568.77
+- 230490CONDisabilityInsurTaxU1  (in Not Reported Liability Account): 28 payments, $50,293,870.86
+- Insurance  (in Non-Personnel Services): 191 payments, $49,124,318.16
+- HtlhSvcFnd-City Hlth Plan Ex  (in Fiduciary-Benefit Payments): 818 payments, $48,744,032.76
+- Other Property Tax  (in Property Taxes): 23 payments, $46,927,865.49
+
+Saved: data/processed/payments.parquet

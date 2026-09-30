@@ -1,0 +1,61 @@
+scope_status,character_code,character,payments,amount_paid
+IN SCOPE,NON_PERS_SVCS,Non-Personnel Services,116100,4228943683.67
+IN SCOPE,CAP_OUTLAY,Capital Outlay,1842,1291506338.46
+IN SCOPE,MTL_SUPP,Materials & Supplies,232774,577884872.96
+OUT: not procurement spending,NOT_REPORTED_LIAB,Not Reported Liability Account,549,2308849595.68
+OUT: not procurement spending,DEBT_SERVICE,Debt Service,533,1993744355.41
+OUT: not procurement spending,CITY_GR_PROG,City Grant Program,23927,1455305905.13
+OUT: not procurement spending,FID_BEN_PMT,Fiduciary-Benefit Payments,885,1344957046.8
+OUT: not procurement spending,CURR_LIAB,Current Liabilities,4311,797383277.21
+OUT: not procurement spending,OTH_REV,Other Revenues,86,674459466.08
+OUT: not procurement spending,AID_PMTS,Aid Payments,11194,379449542.61
+OUT: not procurement spending,OTH_SUP_CARE_PERS,Other Support/Care of Persons,484,300428828.53
+OUT: not procurement spending,CURR_ASSETS,Current Assets,628,150862693.76
+OUT: not procurement spending,CONTRIB_RET_HSS_HLTH,Contributions Ret/HSS/HlthCare,21,150480690.59
+OUT: not procurement spending,NONCURR_ASSETS,Non-Current Assets,9,90349595.8
+OUT: not procurement spending,INTERGOV_REV_ST,Intergovernmental: State,14,58817527.96
+OUT: not procurement spending,PROP_TAX,Property Taxes,23,46927865.49
+OUT: not procurement spending,CHGS_FOR_SERVICES,Charges for Services,232,37709681.01
+OUT: not procurement spending,AID_ASSIST,Aid Assistance,3410,19422659.3
+OUT: not procurement spending,RENTS_CONCESSIONS,Rents & Concessions,118,14012966.39
+OUT: not procurement spending,MAND_FRING_BEN,Mandatory Fringe Benefits,66,5864442.41
+OUT: not procurement spending,INT_INV_INC,Interest & Investment Income,239,1578261.25
+OUT: not procurement spending,CAP_EXP,Capitalized Expenditures,17,776435.17
+OUT: not procurement spending,INTER_REV_FED,Intergovernmental: Federal,7,272091.61
+OUT: not procurement spending,SALARIES,Salaries,11,87403.67
+OUT: not procurement spending,PROG_PROJ,Programmatic Projects,7,77048.55
+OUT: not procurement spending,BUS_TAX,Business Taxes,5,65687.54
+OUT: not procurement spending,FINE_FORF_PENAL,"Fines, Forfeiture, & Penalties",27,62797.44
+OUT: not procurement spending,LIC_PERM_FRAN,"Licenses, Permits,& Franchises",4,52847.0
+OUT: not procurement spending,SVCS_OTHER_DEPTS,Services Of Other Depts,7,33009.19
+OUT: not procurement spending,OH_ALLOCS,Overhead and Allocations,2,18499.88
+OUT: not procurement spending,FAC_MNTC,Facilities Maintenance,2,18183.0
+OUT: not procurement spending,OTHER_LOC_TAX,Other Local Taxes,1,0.0
+OUT: placeholder payee,CURR_LIAB,Current Liabilities,23366,332962832.33
+OUT: placeholder payee,BUS_TAX,Business Taxes,7115,160021401.83
+OUT: placeholder payee,OTHER_LOC_TAX,Other Local Taxes,204,10176045.08
+OUT: placeholder payee,CHGS_FOR_SERVICES,Charges for Services,2956,8659437.48
+OUT: placeholder payee,OTH_REV,Other Revenues,689,7885773.58
+OUT: placeholder payee,NON_PERS_SVCS,Non-Personnel Services,4998,6038307.73
+OUT: placeholder payee,CURR_ASSETS,Current Assets,474,3983587.77
+OUT: placeholder payee,FID_BEN_PMT,Fiduciary-Benefit Payments,1033,2221707.75
+OUT: placeholder payee,FINE_FORF_PENAL,"Fines, Forfeiture, & Penalties",9974,1019773.48
+OUT: placeholder payee,INT_INV_INC,Interest & Investment Income,5212,479174.03
+OUT: placeholder payee,CONT_REF_DIST,Contribution Refund/Distrib,26,466539.91
+OUT: placeholder payee,INTER_REV_FED,Intergovernmental: Federal,1,422844.0
+OUT: placeholder payee,INTERGOV_REV_ST,Intergovernmental: State,1,396634.16
+OUT: placeholder payee,RENTS_CONCESSIONS,Rents & Concessions,145,167570.43
+OUT: placeholder payee,AID_ASSIST,Aid Assistance,602,107776.48
+OUT: placeholder payee,LIC_PERM_FRAN,"Licenses, Permits,& Franchises",183,54756.57
+OUT: placeholder payee,OH_ALLOCS,Overhead and Allocations,1,27364.8
+OUT: placeholder payee,AID_PMTS,Aid Payments,39,24940.74
+OUT: placeholder payee,MTL_SUPP,Materials & Supplies,23,8831.58
+OUT: placeholder payee,MAND_FRING_BEN,Mandatory Fringe Benefits,5,5014.11
+OUT: placeholder payee,SALARIES,Salaries,1,56.67
+OUT: taxes and permits,NON_PERS_SVCS,Non-Personnel Services,10900,412515149.7
+OUT: zero amount,MTL_SUPP,Materials & Supplies,23153,0.0
+OUT: zero amount,CAP_OUTLAY,Capital Outlay,442,0.0
+OUT: zero amount,NON_PERS_SVCS,Non-Personnel Services,10831,0.0
+REVERSAL: kept for matching,CAP_OUTLAY,Capital Outlay,9,-765336.09
+REVERSAL: kept for matching,MTL_SUPP,Materials & Supplies,3565,-6482022.79
+REVERSAL: kept for matching,NON_PERS_SVCS,Non-Personnel Services,342,-27899308.24

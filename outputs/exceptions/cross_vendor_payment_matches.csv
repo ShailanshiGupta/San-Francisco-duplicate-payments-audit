@@ -1,0 +1,6 @@
+candidate_id,confidence,match_type,amount,vendor_1,vendor_2,department_1,department_2,po_1,po_2,date_1,date_2,days_apart,spend_type
+5,High,Identical after cleanup,6224.78,The Kelsey Civic Center LLC,The Kelsey Civic Center LP,HSA Human Services Agency,HSA Human Services Agency,000096165401,000094535601,2025-08-21,2025-09-10,20,Rent/Lease-Building/Structure
+5,High,Identical after cleanup,6224.78,The Kelsey Civic Center LLC,The Kelsey Civic Center LP,HSA Human Services Agency,HSA Human Services Agency,000096165401,000094535601,2025-08-21,2025-07-22,30,Rent/Lease-Building/Structure
+11,High,Identical after cleanup,3942.25,DIRECTV INC,DIRECTV LLC,DPH Public Health,DPH Public Health,000100417201,000101351801,2026-01-29,2026-02-25,27,Other Current Expenses
+52,Low,Similar name,2278.0,A S D SPECIALTY HEALTHCARE INC,ASD Specialty Healthcare LLC,DPH Public Health,DPH Public Health,000090202502,000094481101,2025-07-03,2025-07-30,27,Hospital: Clinic/Lab Supplies
+52,Low,Similar name,2278.0,A S D SPECIALTY HEALTHCARE INC,ASD Specialty Healthcare LLC,DPH Public Health,DPH Public Health,000090202502,000094481101,2025-07-01,2025-07-30,29,Hospital: Clinic/Lab Supplies

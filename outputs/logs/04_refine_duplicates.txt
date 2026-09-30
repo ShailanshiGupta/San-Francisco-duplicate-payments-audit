@@ -1,0 +1,300 @@
+SETTINGS USED
+- PAIRS_FILE: outputs/exceptions/duplicate_payment_pairs.csv
+- SCOPED_FILE: data/processed/scoped_payments.parquet
+- MONTHLY_MIN_MONTHS: 3
+- REVIEW_LIST_SIZE: 25
+- MIN_AMOUNT: 1000
+- OVERFLOW_MAX_RATIO: 1.5
+
+======================================================================
+4A. REFINED STATUS OF ALL FLAGS
+======================================================================
+Refined status                                    payments                amount
+Likely recurring: review                             8,913       $224,921,555.62
+Open: needs review                                   1,520        $23,334,400.15
+Likely explained: monthly pattern                      140         $9,920,782.91
+Likely explained: multi-unit equipment order            65         $6,566,111.73
+Likely explained: repeat supply order                  792         $5,538,712.84
+Likely resolved: reversal found                        207         $2,229,543.85
+(each questioned payment counted once, so totals do not double count)
+
+======================================================================
+4B. WHAT IS STILL OPEN AFTER REFINEMENT
+======================================================================
+Open payments: 1,520, $23,334,400.15
+
+By priority score (higher = more worth reviewing):
+- score 8: 6 payments, $971,249.77
+- score 7: 27 payments, $4,007,753.93
+- score 6: 104 payments, $3,686,719.07
+- score 5: 300 payments, $7,675,480.29
+- score 4: 513 payments, $4,387,343.37
+- score 3: 383 payments, $1,983,429.73
+- score 2: 105 payments, $436,728.28
+- score 1: 82 payments, $185,695.71
+
+Open payments by type of spending:
+- Professional/Specialized Svcs: 391 payments, $10,617,167.86
+- Maint Svcs-Equipment: 68 payments, $2,597,318.33
+- Other Current Expenses: 120 payments, $1,959,753.35
+- Hospital: Clinic/Lab Supplies: 313 payments, $1,924,799.53
+- Rent/Lease-Building/Structure: 54 payments, $1,687,898.69
+- Maint Svcs-Building & Structur: 100 payments, $866,240.20
+- Training: 65 payments, $795,355.37
+- Other Materials/Supplies: 58 payments, $503,148.46
+- Fuels/Lubricants: 29 payments, $459,128.40
+- Judgments & Claims: 35 payments, $440,507.08
+
+======================================================================
+4C. TOP 25 REVIEW LIST
+======================================================================
+
+#1  score 8  [HIGH]  $301,075.40  BAKER PLACES INC
+    Professional/Specialized Svcs
+    payment 1: DPH Public Health | PO 000097477701 | 2025-11-04
+    payment 2: DPH Public Health | PO 000097477701 | 2025-11-04  (0 days later)
+    this PO overall: 85 payments, $7,539,004.36 paid this year
+
+#2  score 8  [HIGH]  $174,505.31  SAN FRANCISCO PUBLIC HEALTH FOUNDATION
+    Professional/Specialized Svcs
+    payment 1: DPH Public Health | PO 000095184201 | 2026-03-25
+    payment 2: DPH Public Health | PO 000095184201 | 2026-03-25  (0 days later)
+    this PO overall: 6 payments, $774,613.31 paid this year
+
+#3  score 8  [MEDIUM]  $148,400.00  Gartner Inc.
+    Professional/Specialized Svcs
+    payment 1: ADM GSA - City Administrator | PO 000102236601 | 2026-04-28
+    payment 2: LIB Public Library | PO 000101720701 | 2026-04-28  (0 days later)
+    this PO overall: 1 payments, $148,400.00 paid this year
+
+#4  score 8  [HIGH]  $131,652.00  Sapient Corporation
+    Professional/Specialized Svcs
+    payment 1: ASR Assessor - Recorder | PO 000077488303 | 2026-03-25
+    payment 2: ASR Assessor - Recorder | PO 000077488303 | 2026-03-25  (0 days later)
+    this PO overall: 5 payments, $658,259.16 paid this year
+
+#5  score 8  [HIGH]  $113,785.26  Sapient Corporation
+    Professional/Specialized Svcs
+    payment 1: ASR Assessor - Recorder | PO 000089436103 | 2026-04-01
+    payment 2: ASR Assessor - Recorder | PO 000089436103 | 2026-04-01  (0 days later)
+    this PO overall: 3 payments, $512,033.41 paid this year
+
+#6  score 8  [HIGH]  $101,831.80  N. HARRIS COMPUTER CORPORATION
+    Professional/Specialized Svcs
+    payment 1: SHF Sheriff | PO 000096785601 | 2025-09-15
+    payment 2: SHF Sheriff | PO 000096785601 | 2025-09-15  (0 days later)
+    this PO overall: 4 payments, $407,327.19 paid this year
+
+#7  score 7  [HIGH]  $901,825.45  Alstom Transport USA Inc
+    Maint Svcs-Equipment
+    payment 1: AIR Airport Commission | PO 000084672402 | 2025-07-07
+    payment 2: AIR Airport Commission | PO 000084672402 | 2025-07-07  (0 days later)
+    this PO overall: 5 payments, $4,541,142.06 paid this year
+
+#8  score 7  [HIGH]  $767,640.91  CLARK CONSTRUCTION GROUP - CALIF LP
+    Professional/Specialized Svcs
+    payment 1: PUC Public Utilities Commsn | PO 000089867302 | 2025-12-08
+    payment 2: PUC Public Utilities Commsn | PO 000089867302 | 2025-12-12  (4 days later)
+    this PO overall: 10 payments, $5,108,843.24 paid this year
+
+#9  score 7  [HIGH]  $293,920.00  Genfare LLC
+    Maint Svcs-Equipment
+    payment 1: MTA Municipal Transprtn Agncy | PO 000102120701 | 2026-05-08
+    payment 2: MTA Municipal Transprtn Agncy | PO 000102120701 | 2026-05-08  (0 days later)
+    this PO overall: 2 payments, $587,840.00 paid this year
+
+#10  score 7  [MEDIUM]  $219,589.00  CONARD HOUSE INC
+    Professional/Specialized Svcs
+    payment 1: DPH Public Health | PO Direct Payments | 2026-04-13
+    payment 2: DPH Public Health | PO Direct Payments | 2026-04-13  (0 days later)
+
+#11  score 7  [HIGH]  $216,450.12  THE RAYTOM GROUP LLC
+    Training
+    payment 1: DEM Emergency Management | PO 000087187802 | 2025-07-17
+    payment 2: DEM Emergency Management | PO 000087187802 | 2025-07-17  (0 days later)
+    this PO overall: 7 payments, $780,681.79 paid this year
+
+#12  score 7  [HIGH]  $171,718.63  MACKAY METERS INC
+    Other Materials/Supplies
+    payment 1: MTA Municipal Transprtn Agncy | PO 000097136901 | 2026-02-27
+    payment 2: MTA Municipal Transprtn Agncy | PO 000097136901 | 2026-02-27  (0 days later)
+    this PO overall: 3 payments, $501,946.76 paid this year
+
+#13  score 7  [HIGH]  $145,463.00  VENTIV TECHNOLOGY INC
+    Other Current Expenses
+    payment 1: HRD Human Resources | PO 000085172102 | 2025-07-29
+    payment 2: HRD Human Resources | PO 000085172102 | 2025-07-29  (0 days later)
+    this PO overall: 3 payments, $436,389.00 paid this year
+
+#14  score 7  [HIGH]  $145,463.00  VENTIV TECHNOLOGY INC
+    Other Current Expenses
+    payment 1: HRD Human Resources | PO 000085172102 | 2025-07-29
+    payment 2: HRD Human Resources | PO 000085172102 | 2025-07-29  (0 days later)
+    this PO overall: 3 payments, $436,389.00 paid this year
+
+#15  score 7  [HIGH]  $137,315.54  K L W LLC
+    Rent/Lease-Building/Structure
+    payment 1: HSA Human Services Agency | PO 000094602201 | 2026-06-18
+    payment 2: HSA Human Services Agency | PO 000094602201 | 2026-06-18  (0 days later)
+    this PO overall: 12 payments, $2,161,693.41 paid this year
+
+#16  score 7  [HIGH]  $136,308.14  VENTIV TECHNOLOGY INC
+    Other Current Expenses
+    payment 1: HRD Human Resources | PO 000094866901 | 2026-06-01
+    payment 2: HRD Human Resources | PO 000094866901 | 2026-06-01  (0 days later)
+    this PO overall: 3 payments, $408,924.42 paid this year
+
+#17  score 7  [HIGH]  $136,308.14  VENTIV TECHNOLOGY INC
+    Other Current Expenses
+    payment 1: HRD Human Resources | PO 000094866901 | 2026-06-01
+    payment 2: HRD Human Resources | PO 000094866901 | 2026-06-01  (0 days later)
+    this PO overall: 3 payments, $408,924.42 paid this year
+
+#18  score 7  [HIGH]  $115,150.00  FOUR FIFTY TOLAND LLC
+    Rent/Lease-Building/Structure
+    payment 1: ADM GSA - City Administrator | PO 000094200301 | 2026-03-18
+    payment 2: ADM GSA - City Administrator | PO 000094200301 | 2026-03-18  (0 days later)
+    this PO overall: 12 payments, $1,262,732.00 paid this year
+
+#19  score 7  [HIGH]  $82,500.00  EXYGY INC
+    Professional/Specialized Svcs
+    payment 1: REC Recreation & Park Commsn | PO 000097796401 | 2025-11-13
+    payment 2: REC Recreation & Park Commsn | PO 000097796401 | 2025-11-13  (0 days later)
+    this PO overall: 2 payments, $165,000.00 paid this year
+
+#20  score 7  [HIGH]  $57,820.78  BAART COMMUNITY HEALTHCARE (BCH)
+    Professional/Specialized Svcs
+    payment 1: DPH Public Health | PO 000095664201 | 2026-04-03
+    payment 2: DPH Public Health | PO 000095664201 | 2026-04-03  (0 days later)
+    this PO overall: 9 payments, $481,507.53 paid this year
+
+#21  score 7  [HIGH]  $50,000.00  ARMOUR FENCE
+    Professional/Specialized Svcs
+    payment 1: REC Recreation & Park Commsn | PO 000093332702 | 2026-06-22
+    payment 2: REC Recreation & Park Commsn | PO 000093332702 | 2026-06-22  (0 days later)
+    this PO overall: 3 payments, $200,000.00 paid this year
+
+#22  score 7  [HIGH]  $45,054.71  KOROTKIN ASSOCIATES INC
+    Professional/Specialized Svcs
+    payment 1: PUC Public Utilities Commsn | PO 000093578402 | 2026-08-31
+    payment 2: PUC Public Utilities Commsn | PO 000093578402 | 2026-08-31  (0 days later)
+    this PO overall: 12 payments, $439,744.23 paid this year
+
+#23  score 7  [HIGH]  $45,054.71  KOROTKIN ASSOCIATES INC
+    Professional/Specialized Svcs
+    payment 1: PUC Public Utilities Commsn | PO 000093578402 | 2026-08-31
+    payment 2: PUC Public Utilities Commsn | PO 000093578402 | 2026-08-31  (0 days later)
+    this PO overall: 12 payments, $439,744.23 paid this year
+
+#24  score 7  [HIGH]  $42,500.00  ARMOUR FENCE
+    Professional/Specialized Svcs
+    payment 1: REC Recreation & Park Commsn | PO 000098030101 | 2026-08-26
+    payment 2: REC Recreation & Park Commsn | PO 000098030101 | 2026-08-26  (0 days later)
+    this PO overall: 4 payments, $170,225.00 paid this year
+
+#25  score 7  [HIGH]  $39,876.40  BAART COMMUNITY HEALTHCARE (BCH)
+    Professional/Specialized Svcs
+    payment 1: DPH Public Health | PO 000095664201 | 2026-04-03
+    payment 2: DPH Public Health | PO 000095664201 | 2026-04-03  (0 days later)
+    this PO overall: 9 payments, $481,507.53 paid this year
+
+======================================================================
+4D. RECURRING OVERPAYMENT CHECK
+======================================================================
+Monthly bills with at least one month paid more than once: 756
+Months flagged: 1,016  |  extra payments: 1,130  |  extra amount: $18,885,187.77
+Of these, a later reversal exists for the same vendor and amount: 6 months, $951,150.37
+
+By pattern (months flagged, and extra payments in those months):
+- Catch-up: within months covered: 569 months, $10,502,908.40
+- Excess: more payments than months covered: 447 months, $8,382,279.37
+
+Potential overpayment (payments beyond the months covered, each bill counted once):
+- 295 bills, 365 extra payments, $6,614,231.10
+
+Top 20 EXCESS bills by amount beyond the months covered:
+
+PROLOGIS L.P.  $345,860.13: paid 7 times over 5 months (2 extra, $691,720.26)
+    Rent/Lease-Building/Structure | MTA Municipal Transprtn Agncy | PO(s): 000094368301 | 000094570101
+    months with more than one payment: 2025-07
+
+Lombard Hotel Group  $133,110.00: paid 12 times over 9 months (3 extra, $399,330.00)
+    Rent/Lease-Building/Structure | HOM Homelessness Services | PO(s): 000094371401
+    months with more than one payment: 2025-07
+
+HARRISON ASSETS LLC  $377,671.03: paid 12 times over 11 months (1 extra, $377,671.03)
+    Rent/Lease-Building/Structure | HSA Human Services Agency | PO(s): 000094635801
+    months with more than one payment: 2025-11
+
+Roshan Investments LLC  $123,690.00: paid 12 times over 9 months (3 extra, $371,070.00)
+    Rent/Lease-Building/Structure | HOM Homelessness Services | PO(s): 000094403201
+    months with more than one payment: 2025-07
+
+Valley Clean Energy Alliance  $229,395.40: paid 7 times over 6 months (1 extra, $229,395.40)
+    Power for Resale | PUC Public Utilities Commsn | PO(s): 000093384602 | 000094916801
+    months with more than one payment: 2025-08
+
+Gaetani Real Estate  $219,862.50: paid 12 times over 11 months (1 extra, $219,862.50)
+    Rent/Lease-Building/Structure | DPH Public Health | PO(s): 000094809001
+    months with more than one payment: 2025-07
+
+Epic State and Local Government LLC  $170,407.00: paid 6 times over 5 months (1 extra, $170,407.00)
+    Professional/Specialized Svcs | DPH Public Health | PO(s): 000094162901
+    months with more than one payment: 2025-07
+
+CLARK CONSTRUCTION GROUP - CALIF LP  $170,000.00: paid 6 times over 5 months (1 extra, $170,000.00)
+    Professional/Specialized Svcs | PUC Public Utilities Commsn | PO(s): 000098793901
+    months with more than one payment: 2026-06
+
+333 Valencia Owner LLC  $168,493.06: paid 7 times over 6 months (1 extra, $168,493.06)
+    Rent/Lease-Building/Structure | DPH Public Health | PO(s): 000094689701
+    months with more than one payment: 2025-09
+
+High Desert Power Project LLC  $158,750.00: paid 8 times over 7 months (1 extra, $158,750.00)
+    Power for Resale | PUC Public Utilities Commsn | PO(s): 000084632502
+    months with more than one payment: 2025-07
+
+DEPARTMENT OF TRANSPORTATION  $117,425.00: paid 13 times over 12 months (1 extra, $117,425.00)
+    Rent/Lease-Building/Structure | MTA Municipal Transprtn Agncy | PO(s): 000095131701
+    months with more than one payment: 2025-09, 2026-06
+
+750 BRANNAN STREET PROPS LLC  $104,044.66: paid 8 times over 7 months (1 extra, $104,044.66)
+    Rent/Lease-Building/Structure | LIB Public Library | PO(s): 000094244501
+    months with more than one payment: 2025-07, 2026-01
+
+LATINO COMMISSION ON ALCOHOL AND DRUG  $50,000.00: paid 6 times over 4 months (2 extra, $100,000.00)
+    Professional/Specialized Svcs | DPH Public Health | PO(s): Direct Payments
+    months with more than one payment: 2026-02, 2026-04
+
+BARAK D JOLISH  $94,449.54: paid 5 times over 4 months (1 extra, $94,449.54)
+    Rent/Lease-Building/Structure | DPH Public Health | PO(s): 000094220501
+    months with more than one payment: 2025-07
+
+33 Gough LLC  $93,916.67: paid 13 times over 12 months (1 extra, $93,916.67)
+    Rent/Lease-Building/Structure | HOM Homelessness Services | PO(s): 000094914301
+    months with more than one payment: 2025-07, 2026-04
+
+120 14TH STREET LLC  $93,838.45: paid 12 times over 11 months (1 extra, $93,838.45)
+    Rent/Lease-Building/Structure | SHF Sheriff | PO(s): 000094166201
+    months with more than one payment: 2025-07, 2025-09
+
+333 Valencia Owner LLC  $93,733.31: paid 7 times over 6 months (1 extra, $93,733.31)
+    Rent/Lease-Building/Structure | DPH Public Health | PO(s): 000094689702
+    months with more than one payment: 2025-09
+
+JELANI INC.  $18,100.00: paid 12 times over 8 months (4 extra, $72,400.00)
+    Rent/Lease-Building/Structure | HOM Homelessness Services | PO(s): 000094911601
+    months with more than one payment: 2025-11
+
+SFII 1390 MARKET ST LLC  $70,534.00: paid 5 times over 4 months (1 extra, $70,534.00)
+    Rent/Lease-Building/Structure | CHF Children;Youth & Families | PO(s): 000084042302 | 000094183701
+    months with more than one payment: 2025-07
+
+AGFA HEALTHCARE CORPORATION  $61,473.27: paid 8 times over 7 months (1 extra, $61,473.27)
+    Maint Svcs-Equipment | DPH Public Health | PO(s): 000098059101
+    months with more than one payment: 2025-12
+
+Saved: outputs/exceptions/recurring_overpayments.csv
+
+Saved: outputs/exceptions/duplicate_flags_refined.csv
+Saved: outputs/review/top25_review_list.csv
